@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NovaGains</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet"/>
   <style>
     body {
       margin: 0;
@@ -43,11 +43,6 @@
     .section h2 {
       text-shadow: 0 0 10px #ff00ff;
     }
-    footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #ccc;
-    }
     form {
       display: flex;
       flex-direction: column;
@@ -57,14 +52,18 @@
     }
     input, textarea {
       padding: 0.8rem;
-      border-radius: 25px;
+      border-radius: 20px;
       border: none;
-      width: 300px;
-      font-family: 'Orbitron', sans-serif;
+      width: 80%;
+      max-width: 400px;
     }
     textarea {
-      resize: vertical;
       min-height: 100px;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #ccc;
     }
   </style>
 </head>
@@ -72,6 +71,7 @@
   <header>
     <h1>NovaGains</h1>
     <p>Le projet de toute une vie. Le changement de tout un monde.</p>
+    <a href="#contact" class="button">Nous contacter</a>
   </header>
 
   <section class="section">
@@ -95,11 +95,9 @@
     </form>
   </section>
 
-  <section class="section">
-    <h2>📨 Nous contacter</h2>
-    <p>Une question, une suggestion ? Écris-nous :</p>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Ton nom" required />
+  <section class="section" id="contact">
+    <h2>📬 Contacte-nous</h2>
+    <form action="https://formspree.io/f/xpwdzkpp" method="POST">
       <input type="email" name="email" placeholder="Ton email" required />
       <textarea name="message" placeholder="Ton message" required></textarea>
       <button type="submit" class="button">Envoyer</button>
